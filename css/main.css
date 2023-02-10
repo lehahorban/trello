@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 0;
+  background: url("../image/pexels.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.app .boards {
+  display: flex;
+  width: 100%;
+}
+.app .boards .boards_item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  max-width: 250px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 0 15px;
+  padding: 10px;
+  transition: 0.3s all ease;
+  border-radius: 3px;
+}
+.app .boards .boards_item .title {
+  color: white;
+  padding: 5px;
+}
+.app .boards .boards_item .title:focus {
+  outline: 1px solid rgba(168, 168, 168, 0.45);
+}
+.app .boards .boards_item .list_item-delete {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 5px;
+  right: 5px;
+  color: #4ccbf1;
+  font-size: 17px;
+}
+.app .boards .boards_item .list_item-delete:hover {
+  background-color: #c5ebf7;
+}
+.app .boards .boards_item .list {
+  min-height: 40px;
+}
+.app .boards .boards_item .list .list_item {
+  position: relative;
+  background-color: #fefefe;
+  border-radius: 3px;
+  text-align: center;
+  padding: 10px;
+  margin: 4px 0;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  border: none;
+}
+.app .boards .boards_item .list .list_item .list_item-span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: 5px;
+  right: 5px;
+  color: #4ccbf1;
+  font-size: 17px;
+}
+.app .boards .boards_item .list .list_item .list_item-span:hover {
+  background-color: #c5ebf7;
+}
+.app .boards .boards_item .form {
+  border-radius: 3px;
+  margin-top: auto;
+  display: none;
+}
+.app .boards .boards_item .form .textarea {
+  resize: none;
+  height: 60px;
+  border-radius: 3px;
+  border: none;
+  background: white;
+  padding: 10px;
+  width: 100%;
+}
+.app .boards .boards_item .form .textarea:focus {
+  outline: none;
+}
+.app .boards .boards_item .form .buttons {
+  display: flex;
+}
+.app .boards .boards_item .form .buttons .add_item-btn {
+  background: rgb(13, 136, 218);
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 100%;
+}
+.app .boards .boards_item .form .buttons .cancel_item-btn {
+  padding: 0 10px;
+  background: rgb(160, 17, 12);
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.app .boards .boards_item .add_btn {
+  height: 30px;
+  background: rgba(155, 155, 155, 0.3);
+  background-repeat: 3px;
+  margin-top: 5px;
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+  color: white;
+}
+.app .boards .boards_item .add_btn span {
+  font-size: 20px;
+  margin-right: 10px;
+  color: white;
+}
+.app .add_board-btn {
+  width: 150px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(6, 141, 231, 0.62);
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  font-size: 14px;
+}
+.app .add_board-btn:hover {
+  background: rgba(7, 176, 228, 0.62);
+}/*# sourceMappingURL=main.css.map */
